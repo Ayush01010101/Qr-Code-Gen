@@ -50,6 +50,7 @@ const qrScanner = new QrScanner(
   (result)=>{
     navigator.vibrate(200)
     open(result.data)
+    return true;
     
   },
   {}, 
